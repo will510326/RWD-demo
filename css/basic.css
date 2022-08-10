@@ -1,0 +1,107 @@
+/* 變數設定 */
+:root {
+    /* 色彩命名 */
+    --lightblue: #7fd1dd;
+    --black: #000000;
+    --green: #27572e;
+    --orange: #f6ababcb;
+    --pink: #ee7ae3;
+    --yellow: #ecd719;
+    --lightgreen: #10e191;
+    --lightyellow: #e9eb69;
+    --blue: #5d5c9c;
+
+    /* 文字尺寸 */
+    --h1: 30px;
+    --h2: 26px;
+    --h3: 24px;
+    --h4: 22px;
+    --h5: 20px;
+    --h6: 18px;
+    --normal: 16px;
+    --small: 14px;
+    --mini: 12px;
+
+    /* 間距值 */
+    --size_normal: 10px;
+    --size_basic: 0.1;
+}
+
+/* basic element setting */
+body,
+html {
+    font-family: 'Nanum Gothic', sans-serif;
+    color: var(--orange);
+    height: 100%;
+}
+
+a:link,
+a:active,
+a:visited {
+    color: var(--pink);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--black);
+    text-decoration: underline;
+}
+
+/* 共用版面設定 */
+.full_layout {
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.narrow_layout {
+    width: 1170px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.half_layout {
+    width: 50%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.small_layout {
+    width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* normal text setting */
+.h1 {
+    font-size: var(--h1);
+    font-weight: 800;
+    line-height: calc(var(--size_basic) * 25);
+    margin: calc(var(--size_normal) * 2) 0;
+}
+
+h2 {
+    font-size: var(--h2, 26px);
+    font-weight: 800;
+    line-height: calc(var(--size_basic, 0.1)* 20);
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: var(--h3, 24px);
+    font-weight: 400;
+    line-height: calc(var(--size_basic, 0.1)* 20);
+    text-transform: uppercase;
+}
+
+h4 {
+    font-size: var(-h4, 22px);
+    font-weight: 400;
+    line-height: calc(var(--size_basic, 0.1)* 20);
+}
+
+h5 {
+    font-size: var(--sub, 20px);
+    font-weight: 200;
+    line-height: calc(var(--size_basic, 0.1) * 20);
+}
