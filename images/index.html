@@ -11,27 +11,91 @@
     <!--網站小圖示 -->
     <!-- <link rel="shorcut icon" href="images/icon-main.ico"> -->
     <!-- 歸零CSS    -->
-    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="../css/reset.css">
     <!-- 變數設定CSS-->
-    <link rel="stylesheet" href="css/basic.css">
+    <link rel="stylesheet" href="../css/basic.css">
+    <!-- 設定版面CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- Google icon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 
 <body>
     <div id="header">
-        <div id="logo"></div>
-        <div id="nav"></div>
+        <div id="logo">
+            <h1>
+                <span>
+                    Weapon
+                    <a href="#"></a>
+                </span>
+            </h1>
+        </div>
+        <div id="nav">
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Stores</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">New</a>
+                    <ul>
+                        <li><a href="#">Lady</a></li>
+                        <li><a href="#">Girl</a></li>
+                        <li><a href="#">Child</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
     </div>
-    <div id="banner"></div>
+    <div id="banner">
+        <img src="./F-16.jpeg" alt="Weapon">
+    </div>
     <div id="main-content">
-        <div id="slogan"></div>
+        <div class="slogan">
+            <h2>What is Lorem Ipsum?</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s</p>
+            <p>It is a long established fact that a reader will be distracted by the readable content of a page when
+                looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution
+                of letters</p>
+            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
+                in some form, by injected humour</p>
+            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical
+                Latin literature from 45 BC, making</p>
+        </div>
         <div class="post"></div>
         <div class="post"></div>
     </div>
     <div id="picshow"></div>
     <div id="movie"></div>
     <div id="footer">
-
+        <div id="small-logo"></div>
+        <div id="copyright"></div>
+        <div id="sns">
+            <a href="#" target="_blank">
+                <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+            <a href="#" target="_blank">
+                <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+            <a href="#" target="_blank">
+                <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+            <a href="#" target="_blank">
+                <span>
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                </span>
+            </a>
+        </div>
     </div>
+    <!-- Go Top  -->
+    <div id="gotop">
+        <a href="#">
+            <ion-icon class="arrow-up-circle-outline" name="arrow-up-circle-outline"></ion-icon>
+            <span class="gotip">Go Back To Top</span>
+        </a>
+    </div>
+    <!-- ionicon -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>
