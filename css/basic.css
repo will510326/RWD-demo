@@ -106,3 +106,123 @@ h5 {
     line-height: calc(var(--size_basic, 0.1) * 20);
 }
 
+/* 作用文字 */
+.highlight_txt {
+    border-bottom: 3px solid var(--lightblue);
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--pink) !important;
+}
+
+.active_txt {
+    padding: var(--size_normal, 10px);
+    background-color: var(--pink);
+    color: var(--lightyellow);
+}
+
+.font-size-50 {
+    font-size: 50px;
+}
+
+.line-height_15 {
+    line-height: 15px;
+}
+
+.margin_bottom-20 {
+    margin: 20px 0 0 0;
+}
+
+/* 作用於背景顏色 */
+.bg_piggy {
+    background: rgb(206, 142, 200, 0.3);
+}
+
+/* 組建樣式設定 */
+/* 按鈕顏色 */
+.button_grey {
+    font-size: var(--size_normal);
+    font-weight: bolder;
+    text-align: center;
+    color: var(#ffffff);
+    background-color: var(--grey, #545454ff);
+}
+
+.button_grey:hover {
+    color: var(--grey, #545454ff);
+    background-color: var(--white, #ffffffff);
+}
+
+.button_grey:active {
+    color: var(--white, #ffffffff);
+    background-image: linear-gradient(var(--white, #ffffffff)0%, var(--grey, #545454ff)150%);
+}
+
+.button_grey-gradient {
+    font-size: var(--size_normal);
+    font-weight: bolder;
+    text-align: center;
+    color: var(#545454ff);
+    background-image: linear-gradient(var(--white, #ffffffff)0%, var(--grey, #545454ff)150%);
+}
+
+.button_grey-gradient:hover,
+.button_grey-gradient:active {
+    background-image: linear-gradient(var(--white, #545454ff)0%, var(--grey, #ffffffff)150%);
+}
+
+.button_pink {
+    font-size: var(--size_normal);
+    font-weight: bolder;
+    text-align: center;
+    color: var(#545454ff);
+    background-color: var(--grey, #f9cddeff);
+}
+
+.button_pink:hover {
+    color: var(--grey, #545454ff);
+    background-color: var(--white, #f9cddeff);
+}
+
+.button_pink:active {
+    color: var(--white, #545454ff);
+    background-image: linear-gradient(var(--white, #ffffffff)0%, var(--grey, #f9cddeff)150%);
+}
+
+.button_pink-gradient {
+    font-size: var(--size_normal);
+    font-weight: bolder;
+    text-align: center;
+    color: var(#545454ff);
+    background-image: linear-gradient(var(--white, #ffffffff)0%, var(--grey, #f9cddeff)150%);
+}
+
+.button_pink-gradient:hover,
+.button_pink-gradient:active {
+    background-image: linear-gradient(var(--white, #f9cddeff)0%, var(--grey, #ffffffff)150%);
+}
+        /* 指標樣式 */
+        .cursor_pointer{
+            cursor: pointer;
+        }
+.pic_transform{
+    transform: scale(1,1);
+    transition: transform 0.4s linear;
+}
+.pic_transform:hover{
+    transform: scale(1.5, 1.5);
+    opacity: 0.6;
+    box-shadow: 0 0 10px 5px var(--blue);
+    z-index: 1000;
+    position: relative;
+}
+
+/* stores.html setting */
+.color_pink{
+    color: var(--pink);
+}
+
+
+
+.text-aling_center{
+    text-align: center;
+}
