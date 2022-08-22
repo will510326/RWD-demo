@@ -226,3 +226,47 @@ h5 {
 .text-aling_center{
     text-align: center;
 }
+.border-radius_30{
+    border-radius: 30px;
+}
+.flip_img{
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+.margin_h1{
+    margin-left: calc(var(--size_normal) * 1);
+    margin-right: calc(var(--size_normal) * 1);
+}
+.text-align_justify{
+    text-align: justify;
+}
+
+
+.tooltip{
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext{
+    visibility: hidden;
+    width: 120px;
+    background-color: var(--pink);
+    color: var(--white);
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 10000;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.tooltip:hover .tooltiptext{
+    visibility: visible;
+    opacity: 1;
+}
