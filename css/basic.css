@@ -270,3 +270,38 @@ h5 {
     visibility: visible;
     opacity: 1;
 }
+.margin_top-50
+{
+    margin-top: 50px;
+}
+.font-weight_bolder{
+    font-weight: bolder;
+}
+.text_nocase{
+    transform: none;
+}
+.font-size_bigger{
+    font-size:120%;
+}
+
+.margin_V3{
+    vertical-align: 30px;
+}
+.margin_v5{
+    vertical-align: 50px;
+}
+.first-letter-effect::first-letter{
+    font-size: 200%;
+    color: var(--pink);
+    font-weight: bold;
+}
+
+.overflow_hidden{
+    overflow: hidden;
+}
+.text-align_center{
+    text-align: center;
+}
+.padding_bottom-30{
+    padding-bottom: 30px;
+}

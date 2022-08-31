@@ -18,6 +18,9 @@
     <link rel="stylesheet" href="../css/style.css">
     <!-- Google icon -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- JQeury setting -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="/js/gotop.js"></script>
 </head>
 
 <body>
@@ -32,9 +35,9 @@
                 <li><a href="products.html">Products</a></li>
                 <li><a href="#">New</a>
                     <ul>
-                        <li><a href="#">Lady</a></li>
-                        <li><a href="#">Girl</a></li>
-                        <li><a href="#">Child</a></li>
+                        <li><a href="New_lady.html">Lady</a></li>
+                        <li><a href="New_girl.html">Girl</a></li>
+                        <li><a href="New_child.html">Child</a></li>
                     </ul>
                 </li>
                 <li><a href="contact.html">Contact</a></li>
@@ -105,12 +108,33 @@
     </div>
     <!-- Go Top  -->
     <div id="gotop">
-        <a href="#">
-            <ion-icon class="arrow-up-circle-outline" name="arrow-up-circle-outline"></ion-icon>
-            <span class="gotip">Go Back To Top</span>
-        </a>
+        <ion-icon class="arrow-up-circle-outline" name="arrow-up-circle-outline"></ion-icon>
+        <span class="gotip">Go Back To Top</span>
     </div>
+
     <!-- ionicon -->
+    <!-- <script>
+        // 設定變數指定gotop
+        const mybutton = document.querySelector('#gotop');
+
+        //設定當畫面捲動到400時出現gotop按鈕，否則就隱藏起來
+        window.onscroll = function () {
+            scrollwindow()
+        };
+
+        function scrollwindow() {
+            if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+                mybutton.style.display = 'block';
+            } else {
+                mybutton.style.display = 'none';
+            }
+        }
+        // 設定按下按鈕時畫面移到頁面上方
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script> -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
