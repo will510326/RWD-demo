@@ -151,12 +151,8 @@
     float: right;
 }
 
-#sns a {
-    display: block;
-    width: 45px;
-    height: 45px;
-    float: right;
-    margin: 20px 10px 0;
+#sns a:hover {
+    text-decoration: none;
 }
 
 /* Go Top setting */

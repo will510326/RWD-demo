@@ -21,6 +21,12 @@
     <!-- JQeury setting -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="/js/gotop.js"></script>
+    <!-- 共用JS -->
+    <script src="/js/slide.min.js"></script>
+    <!-- icon圖標 -->
+    <link rel="stylesheet" href="../css/icon-style.css">
+    <!-- banner setting -->
+    <link rel="stylesheet" href="../css/slide.css">
 </head>
 
 <body>
@@ -44,8 +50,83 @@
             </ul>
         </div>
     </div>
-    <div id="banner">
+    <!-- <div id="banner">
         <img src="../images/Hololive123.png" alt="Hololive">
+    </div> -->
+    <div class="banner" id="banner">
+        <!-- 橫幅4圖 -->
+        <div id="slide2d" class="slide-carousel slide-2d">
+            <ul class="item-list">
+                <li class="item0">
+                    <div class="item-content">
+                        <a href="#">
+                            <picture>
+                                <!-- media search -->
+                                <source media="(max-width: 959px) and (min-width: 768px)"
+                                    srcset="/images/Hololive123.png">
+                                <source media="(max-width: 767px)" srcset="/images/Hololive123.png">
+                                <img src="/images/Hololive123.png" alt="">
+                            </picture>
+                        </a>
+                    </div>
+                </li>
+                <li class="item1">
+                    <div class="item-content">
+                        <a href="#">
+                            <picture>
+                                <!-- media search -->
+                                <source media="(max-width: 959px) and (min-width: 768px)"
+                                    srcset="/images/Hololive123.png">
+                                <source media="(max-width: 767px)" srcset="/images/Hololive123.png">
+                                <img src="/images/hololive.jpeg" alt="">
+                            </picture>
+                        </a>
+                    </div>
+                </li>
+                <li class="item2">
+                    <div class="item-content">
+                        <a href="#">
+                            <picture>
+                                <!-- media search -->
+                                <source media="(max-width: 959px) and (min-width: 768px)"
+                                    srcset="/images/Hololive123.png">
+                                <source media="(max-width: 767px)" srcset="/images/Hololive123.png">
+                                <img src="/images/Holomen2.png" alt="">
+                            </picture>
+                        </a>
+                    </div>
+                </li>
+                <li class="item3">
+                    <div class="item-content">
+                        <a href="#">
+                            <picture>
+                                <!-- media search -->
+                                <source media="(max-width: 959px) and (min-width: 768px)"
+                                    srcset="/images/Hololive123.png">
+                                <source media="(max-width: 767px)" srcset="/images/Hololive123.png">
+                                <img src="/images/Holomen 2.png" alt="">
+                            </picture>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+            <!-- 指示圖示 -->
+            <div class="indicator-list">
+                <a href="#" data-slide-index="0" class="selected"></a>
+                <a href="#" data-slide-index="1"></a>
+                <a href="#" data-slide-index="2"></a>
+                <a href="#" data-slide-index="3"></a>
+            </div>
+
+            <!-- 左右控制器 -->
+            <div class="controls">
+                <a href="#" class="item-prev glyphicon glyphicon-menu-left"></a>
+                <a href="#" class="item-next glyphicon glyphicon-menu-right"></a>
+            </div>
+
+            <!-- 底色塊 -->
+            <div class="desc"></div>
+        </div>
     </div>
     <div id="main-content">
         <div class="slogan">
@@ -88,21 +169,19 @@
     </div>
     <div id="footer">
         <div id="small-logo"></div>
-        <div id="copyright"></div>
+        <div id="copyright">&copy;</div>
         <div id="sns">
             <a href="#" target="_blank">
-                <ion-icon name="logo-twitter"></ion-icon>
+                <span class="icon-fb"></span>
             </a>
             <a href="#" target="_blank">
-                <ion-icon name="logo-facebook"></ion-icon>
+                <span class="icon-ig"></span>
             </a>
             <a href="#" target="_blank">
-                <ion-icon name="logo-instagram"></ion-icon>
+                <span class="icon-twitter"></span>
             </a>
             <a href="#" target="_blank">
-                <span>
-                    <ion-icon name="logo-linkedin"></ion-icon>
-                </span>
+                <span class="icon-linked"></span>
             </a>
         </div>
     </div>
