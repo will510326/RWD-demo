@@ -16,11 +16,12 @@
     <link rel="stylesheet" href="../css/basic.css">
     <!-- 設定版面CSS -->
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/chat.css">
     <!-- Google icon -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <!-- JQeury setting -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <script src="/js/gotop.js"></script>
+    <!-- 線上客服JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@joeattardi/emoji-button@3.1.1/dist/index.min.js"></script>
+
     <!-- icon圖標 -->
     <link rel="stylesheet" href="../css/icon-style.css">
 </head>
@@ -138,10 +139,31 @@
             </a>
         </div>
     </div>
-    <!-- Go Top  -->
-    <div id="gotop">
-        <ion-icon class="arrow-up-circle-outline" name="arrow-up-circle-outline"></ion-icon>
-        <span class="gotip">Go Back To Top</span>
+    <!-- 線上聊天客服 -->
+    <div class="section">
+        <!-- 開啟聊天按鈕 -->
+        <button class="chat-btn cursor_pointer">
+            <i class="material-icons">comment</i>
+        </button>
+        <div class="chat-popup">
+            <div class="badge">1</div>
+            <!-- 客服人員 -->
+            <div class="chat-area">
+                <div class="income-msg">
+                    <img src="/images/巧可1.png" class="avatar" alt="">
+                    <span class="msg"> Hi, How can I help you? </span>
+                </div>
+            </div>
+            <!-- 客服輸入 -->
+            <div class="input-area">
+                <input type="text" id="chat-input">
+                <button id="emoji-btn">&#127881;</button>
+                <button class="submit">
+                    <i class="material-icons">send</i>
+                </button>
+            </div>
+        </div>
+        <script src="/js/chat.js"></script>
     </div>
     <!-- ionicon -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
